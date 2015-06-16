@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content='版块列表 - ' name='description'>
+    <meta charset='UTF-8'>
+    <meta content='True' name='HandheldFriendly'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>版块列表- 吴培基个人博客</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+
+
+    <!--采用主流的bower 进行各种包的管理-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]--></head>
+<body id="startbbs">
+<!-- 伟大的导航条开始了-->
+<div id="navbar-wrapper">
+    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="blog.html">吴培基个人博客</a>
+                <!--<a class=".btn .btn-default navbar-btn collapsed" data-target=".navbar-collapse" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://localhost:55555/index.php" class="brand">Start<span class="green">BBS</span></a>-->
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="blog.html">首页</a></li>
+                    <li  class="active"><a href="bankuai.html">板块</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="introduce2.html">大事件</a></li>
+                    <li><a href="write.html">写博客</a></li>
+                </ul>
+                <!--搜索框，做成表单形式方便以后提交表单，进行搜索-->
+                <form action="#" method="post" accept-charset="utf-8" class="navbar-form navbar-left" target="_blank"
+                      role="search">
+                    <div style="display:none">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="keyword" placeholder="输入关键字回车">
+                    </div>
+                </form>
+                <!--搜索框结束-->
+                <!--navbar-collapse 导航-->
+                <ul class="nav navbar-nav navbar-right">
+                    <!--信箱，假装有一条信息-->
+                    <li><a href="#"><span
+                            class="glyphicon glyphicon-envelope"></span> <span class="bg-primary">1</span></a></li>
+                    <!--               单按钮下拉菜单                   -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                class='glyphicon glyphicon-user'></span> admin <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人主页</a></li>
+                            <li><a href="#">站内信</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li><a href="#">管理后台</a></li>
+                            <li class="divider"></li>
+                            <!--<li class="dropdown-header">Nav header</li>-->
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--navbar-collapse 结束-->
+        </div>
+    </div>
+
+</div>
+<!-- 伟大的导航条结束了-->
+<!--主题部分-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">吴培基个人博客<span class='pull-right'>板块数：<span class='badge badge-info'>&nbsp;8&nbsp;</span></span></h3>
+                </div>
+                <div class="panel-body">
+                    编程，开发，娱乐，打酱油......just you like </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">板块列表</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="media-list">
+                        <li class="media section">
+                            <a class="media-left" href="#"><img class="img-rounded" src="img/springmvc.png" alt="spring mvc"></a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">spring mvc</a></h4>
+                                <p class="text-muted">
+                                    spring提供的一套web开发框架                                    </p>
+                                <p class="text-muted">
+                                    版主:青峰                                    </p>
+                            </div>
+                        </li>
+                        <li class="media section">
+                            <a class="media-left" href="#"><img class="img-rounded" src="img/springsecurity.png" alt="spring security"></a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="">spring security</a></h4>
+                                <p class="text-muted">
+                                    由spring公司提供的一套web安全验证框架                                    </p>
+                                <p class="text-muted">
+                                    版主:黑子哲也                                    </p>
+                            </div>
+                        </li>
+                        <li class="media section">
+                            <a class="media-left" href="#"><img class="img-rounded" src="img/mybatis.png" alt="mybatis"></a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">mybatis</a></h4>
+                                <p class="text-muted">
+                                    比hibernate更为灵活的数据库层                                    </p>
+                                <p class="text-muted">
+                                    版主:黄濑凉太                                    </p>
+                            </div>
+                        </li>
+                        <li class="media section">
+                            <a class="media-left" href="#"><img class="img-rounded" src="img/jquerylogo.png" alt="前端"></a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">前端</a></h4>
+                                <p class="text-muted">
+                                    前端                                    </p>
+                                <p class="text-muted">
+                                    版主:紫原敦                                    </p>
+                            </div>
+                        </li>
+                        <li class="media section">
+                            <a class="media-left" href="#"><img class="img-rounded" src="img/android.png" alt="Android应用开发"></a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="">Android应用开发</a></h4>
+                                <p class="text-muted">
+                                    移动应用开发                                    </p>
+                                <p class="text-muted">
+                                    版主:木吉铁平                                    </p>
+                            </div>
+                        </li>
+                        <li class="media section">
+                            <a class="media-left" href="#"><img class="img-rounded" src="img/qita.png" alt="其他杂谈"></a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">其他杂谈</a></h4>
+                                <p class="text-muted">
+                                </p>
+                                <p class="text-muted">
+                                    版主:赤司征十郎                                    </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.col-md-8 -->
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>吴培基个人博客</h4>
+                </div>
+                <div class="panel-body">
+                    <a href="#" class="btn btn-default">现在注册</a> 已注册请
+                    <a href="#" class="startbbs">登录</a>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">最新注册</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class='user-list clearfix'>
+                        <li>
+                            <a href="#"  title="admin">
+                                <img class="img-rounded" alt="赤司" src="img/cisi.png" />
+                            </a></li>
+                        <li>
+                            <a href="#"  title="admin">
+                                <img class="img-rounded" alt="绿间" src="img/lvjian.png" />
+                            </a></li> <li>
+                        <a href="#"  title="admin">
+                            <img class="img-rounded" alt="青峰" src="img/qingfeng.png" />
+                        </a></li>
+                        <li>
+                            <a href="#"  title="admin">
+                                <img class="img-rounded" alt="火神大我" src="img/hshen.png" />
+                            </a></li>
+                    </ul>
+                </div>
+            </div>				<div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">最新贴子</h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    <li>
+                        <span><a href="#">人生若只如初见..</a><span class="pull-right gray">7小时前</span></span>
+                    </li>
+                    <li>
+                        <span><a href="#">MyBatis 通用 Dao..</a><span class="pull-right gray">5小时前</span></span>
+                    </li>
+                    <li>
+                        <span><a href="#">泡泡聊天布局..</a><span class="pull-right gray">3小时前</span></span>
+                    </li>
+                    <li>
+                        <span><a href="#">java操作cookies..</a><span class="pull-right gray">3小时前</span></span>
+                    </li>
+                    <li>
+                        <span><a href="#">springMVC myba..</a><span class="pull-right gray">2小时前</span></span>
+                    </li>
+                    <li>
+                        <span><a href="#">springMVC myba..</a><span class="pull-right gray">2小时前</span></span>
+                    </li>
+                    <li>
+                        <span><a href="#">springmvc实现文件上..</a><span class="pull-right gray">1小时前</span></span>
+                    </li>
+                    <li>
+                        <span><a href="#">jquery行的操作..</a><span class="pull-right gray">1小时前</span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">优秀推荐</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="modal-title bg-info"><a href="#">《人生若只如初见》</a></p>纳兰性德，倘若人生若只如初见，又怎么会感叹何事秋风悲画扇。
+                </div>
+            </div>            </div><!-- /.col-md-4 -->
+
+    </div><!-- /.row -->
+</div><!-- /.container -->
+<!--主题内容结束-->
+<footer class="small">
+    <div class="container">
+        <div class="row">
+            <p>吴培基个人博客 版权所有，翻版必究</p>
+            <p>2015年06月</p>
+        </div>
+    </div>
+</footer>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script></body>
+</html>

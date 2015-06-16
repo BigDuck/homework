@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content='论坛大事件 - ' name='description'>
+    <meta charset='UTF-8'>
+    <meta content='True' name='HandheldFriendly'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>论坛大事件 - 吴培基个人博客</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="http://www.helloweba.com/demo/css/main.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <link>
+    <!--采用主流的bower 进行各种包的管理-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/javascript" >
+
+
+</script>
+</head>
+
+<style type="text/css">
+    h2.top_title span{font-size:12px; color:#666;font-weight:500}
+</style>
+<body>
+<!-- 伟大的导航条开始了-->
+<div id="navbar-wrapper"  >
+    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="blog.html">吴培基个人博客</a>
+                <!--<a class=".btn .btn-default navbar-btn collapsed" data-target=".navbar-collapse" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://localhost:55555/index.php" class="brand">Start<span class="green">BBS</span></a>-->
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="blog.html">首页</a></li>
+                    <li><a href="bankuai.html">板块</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <li class="active"><a href="#">大事件</a></li>
+                    <li ><a href="write.html">写博客</a></li>
+                </ul>
+                <!--搜索框，做成表单形式方便以后提交表单，进行搜索-->
+                <form action="#" method="post" accept-charset="utf-8" class="navbar-form navbar-left" target="_blank"
+                      role="search">
+                    <div style="display:none">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="keyword" placeholder="输入关键字回车">
+                    </div>
+                </form>
+                <!--搜索框结束-->
+                <!--navbar-collapse 导航-->
+                <ul class="nav navbar-nav navbar-right">
+                    <!--信箱，假装有一条信息-->
+                    <li><a href="#"><span
+                            class="glyphicon glyphicon-envelope"></span> <span class="bg-primary">1</span></a></li>
+                    <!--               单按钮下拉菜单                   -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                class='glyphicon glyphicon-user'></span> admin <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人主页</a></li>
+                            <li><a href="#">站内信</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li><a href="#">管理后台</a></li>
+                            <li class="divider"></li>
+                            <!--<li class="dropdown-header">Nav header</li>-->
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--navbar-collapse 结束-->
+        </div>
+    </div>
+
+</div>
+<!-- 伟大的导航条结束了-->
+<!--巨幕-->
+<div class="jumbotron">
+    <h1>网站简介!</h1>
+    <p>基于bootstrap制作，使用大部分的css样式，组件，以及JavaScript</p>
+</div>
+<!--巨幕-结束-->
+<div>
+<section id="cd-timeline" class="cd-container">
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+            <img src="img/cd-icon-location.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>项目基本构架</h2>
+            <p>项目为百搭的博客模版，最为普遍布局，没有华丽的特效，简约，但不简单。基于webstorm10.0.*开发，使用bower作为包依赖的管理器，基于Github的Html空项目，使用bootstrap作为总体框架</p>
+            <span class="cd-date">2015-05-28</span>
+        </div>
+    </div>
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+            <img src="img/cd-icon-location.svg">
+
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>项目首页建立</h2>
+            <p>使用了bootstrap的导航条作为项目的导航条，全局结合bootstrap的面板进行区域的划分，结合bootstrap的各种css样式</p>
+            <span class="cd-date">2015-6-*</span>
+        </div>
+    </div>
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+            <img src="img/cd-icon-location.svg">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>登录页面</h2>
+            <p>保持统一风格，导航栏直接复制过去。使用了bootstrap的form-horizontal的表单样式，每一个作为form-group，加之基本的表单验证，</p>
+            <a href="http://www.helloweba.com/view-blog-283.html" class="cd-read-more" target="_blank">阅读全文</a>
+            <span class="cd-date">2014-12-20</span>
+        </div>
+    </div>
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+            <img src="img/cd-icon-location.svg">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>板块的确立</h2>
+            <p>主体依然使用面板划分区域，加之简单的media-list使用，主要用来展示，板块的数目及其信息。</p>
+            <a href="">阅读全文</a>
+            <span class="cd-date">2014-12-14</span>
+        </div>
+    </div>
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+            <img src="img/cd-icon-location.svg" alt="Location">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>博客的发表</h2>
+            <p>博客的发表，以表单的形式进行设计的方便后期如果要提交到后台，并结合bootstrap的一些样式。</p>
+            <span class="cd-date">2015-6-*</span>
+        </div>
+    </div>
+</section>
+</div>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script></body>
+</html>

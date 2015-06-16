@@ -1,0 +1,156 @@
+<!DOCTYPE html><html><head><meta content='登入' name='description'>
+    <meta charset='UTF-8'>
+    <meta content='True' name='HandheldFriendly'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>登入 - 吴培基个人博客</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+
+
+    <!--采用主流的bower 进行各种包的管理-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]--></head>
+<body id="startbbs">
+<div id="navbar-wrapper col-md-12">
+    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="blog.html">吴培基个人博客</a>
+                <!--<a class=".btn .btn-default navbar-btn collapsed" data-target=".navbar-collapse" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://localhost:55555/index.php" class="brand">Start<span class="green">BBS</span></a>-->
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="blog.html">首页</a></li>
+                    <li  ><a href="bankuai.html">板块</a></li>
+                    <li class="active"><a href="">登录</a></li>
+                    <li><a href="introduce.html">照片墙</a></li>
+                    <li><a href="write.html">写博客</a></li>
+                </ul>
+                <!--搜索框，做成表单形式方便以后提交表单，进行搜索-->
+                <form action="#" method="post" accept-charset="utf-8" class="navbar-form navbar-left" target="_blank"
+                      role="search">
+                    <div style="display:none">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="keyword" placeholder="输入关键字回车">
+                    </div>
+                </form>
+                <!--搜索框结束-->
+                <!--navbar-collapse 导航-->
+                <ul class="nav navbar-nav navbar-right">
+                    <!--信箱，假装有一条信息-->
+                    <li><a href="#"><span
+                            class="glyphicon glyphicon-envelope"></span> <span class="bg-primary">1</span></a></li>
+                    <!--               单按钮下拉菜单                   -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                class='glyphicon glyphicon-user'></span> admin <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人主页</a></li>
+                            <li><a href="#">站内信</a></li>
+                            <li><a href="#">设置</a></li>
+                            <li><a href="#">管理后台</a></li>
+                            <li class="divider"></li>
+                            <!--<li class="dropdown-header">Nav header</li>-->
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--navbar-collapse 结束-->
+        </div>
+    </div>
+
+</div>
+<!-- 伟大的导航条结束了-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">请登录</h3>
+                </div>
+                <div class="panel-body">
+                    <!--登录表单制作-->
+                    <form accept-charset="UTF-8" action="index.html" class="form-horizontal" id="new_user" method="post" novalidate="novalidate">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="user_nickname">输入账号</label>
+                            <div class="col-md-6">
+                                <input class="form-control" id="user_nickname" placeholder="请输入登录邮箱"  name="username" size="50" type="email" value=""/><span class="help-block red"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="user_password">密码</label>
+                            <div class="col-md-6">
+                                <input class="form-control" id="user_password" placeholder="请输入密码" name="password" size="50" type="password" value=""/>
+                                <span class="help-block red"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="captcha_code">验证码</label>
+                            <div class="col-md-4">
+                                <input class="form-control" id="captcha_code" name="captcha_code" size="50" type="text"  value=""/>
+                                <span class="help-block red"></span>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" title="更换验证码"><img src="img/yanzheng.gif" name="checkCodeImg"border="0" /></a>&nbsp;&nbsp;<a href="#">换一张</a>
+                            </div>
+                        </div>
+
+                        <div class='form-group'>
+                            <div class="col-md-offset-2 col-md-9">
+                                <button type="submit" name="commit" class="btn btn-primary">登录</button>
+                                <button class="btn btn-default" >找回密码</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <!--登录表单制作结束-->
+                </div>
+            </div>
+        </div><!-- /.col-md-8 -->
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>吴培基个人博客</h4>
+                </div>
+                <div class="panel-body">
+                    <a href="#" class="btn btn-default">现在注册</a> 已注册请
+                    <a href="#" class="">登入</a>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">注意</h3>
+                </div>
+                <div class="panel-body">
+                   请检查您的网络环境是否安全，在公共的网络环境中请注意保护您的密码
+                </div>
+            </div>			</div><!-- /.col-md-4 -->
+
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+<footer class="small">
+    <div class="container">
+        <div class="row">
+            <p>吴培基个人博客 版权所有，翻版必究</p>
+            <p>2015年06月</p>
+        </div>
+    </div>
+</footer>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script></body>
+</html>
